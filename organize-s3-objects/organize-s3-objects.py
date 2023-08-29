@@ -4,7 +4,7 @@ from datetime import datetime
 today = datetime.today()
 todays_date = today.strftime("%Y%m%d")
 
-def lambda_handleer(event, context):
+def lambda_handler(event, context):
 
     s3_client = boto3.client('s3')
 
